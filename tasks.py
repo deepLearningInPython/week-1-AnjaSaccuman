@@ -33,7 +33,7 @@ print(step(5))
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff=0):
-    for i in range(len(array)):
+    for i in array:
         if array[i] < cutoff:
             array[i] = cutoff
     return array

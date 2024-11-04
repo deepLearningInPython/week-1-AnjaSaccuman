@@ -32,8 +32,8 @@ print(step(5))
 
 # Your code here:
 # -----------------------------------------------
-def ReLu(array, cutoff=0):
-    for i in array:
+def Relu(array, cutoff=0):
+    for i in range(len(array)):
         if array[i] < cutoff:
             array[i] = cutoff
     return array
@@ -54,7 +54,7 @@ def ReLu(array, cutoff=0):
 
 def neural_net_layer(two_dim, one_dim):
     mult = two_dim @ one_dim
-    ans = ReLu(mult)
+    ans = Relu(mult)
     return ans 
 
 

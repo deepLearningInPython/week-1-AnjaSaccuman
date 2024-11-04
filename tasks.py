@@ -11,14 +11,11 @@ import numpy
 
 # Your code here:
 # -----------------------------------------------
-
 def step(x):
     if x > 0:
         return(1)
     else:
         return(-1)
-
-
 print(step(5))
 # -----------------------------------------------
 
@@ -51,9 +48,6 @@ def ReLu(array, cutoff=0):
 
 # Your code here:
 # -----------------------------------------------
-import numpy as np
-from tasks import step, ReLu, neural_net_layer
-
 def neural_net_layer(two_dim, one_dim):
     mult = two_dim @ one_dim
     ans = ReLu(mult)

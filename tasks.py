@@ -16,7 +16,6 @@ def step(x):
         return(1)
     else:
         return(-1)
-print(step(5))
 # -----------------------------------------------
 
 
@@ -34,8 +33,6 @@ def ReLu(array, cutoff=0):
         if array[i] < cutoff:
             array[i] = cutoff
     return array
-
-
 # -----------------------------------------------
 
 
@@ -52,6 +49,4 @@ def neural_net_layer(two_dim, one_dim):
     mult = two_dim @ one_dim
     ans = ReLu(mult)
     return ans 
-
-
 # ------------------------------------------

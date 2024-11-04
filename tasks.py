@@ -29,10 +29,7 @@ def step(x):
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff=0):
-    for i in range(len(array)):
-        if array[i] < cutoff:
-            array[i] = cutoff
-    return array
+    return np.maximum(array, cutoff)
 # -----------------------------------------------
 
 
